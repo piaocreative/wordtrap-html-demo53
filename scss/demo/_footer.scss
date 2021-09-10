@@ -1,0 +1,53 @@
+
+/* ----------------------------------------------------------------
+
+	footer.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for footer. Thanks!
+-----------------------------------------------------------------*/
+
+#footer {
+	background-color: black;
+
+	a {
+		text-decoration: none !important;
+	}
+}
+
+#footer-main {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+
+	.navbar-brand {
+		img {
+			width: 5rem;
+
+			@include media-breakpoint-down(lg) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+#footer-bottom {
+	padding-top: 3rem;
+	padding-bottom: 3.375rem;
+	border-top: 1px solid #1a1a1a;
+
+	p {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 400;	
+		color: #808080;
+		line-height: 2;
+		z-index: 1;	
+	}
+}

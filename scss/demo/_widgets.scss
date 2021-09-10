@@ -1,0 +1,244 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	p {
+		font-family: $body-font;
+		font-weight: 400;
+		line-height: 1.35rem!important;
+		color: #606060;
+		font-size: 0.875rem;
+	}
+
+	a {
+		font-family: $body-font;
+		font-weight: 400;
+	}
+
+	.widget-title {
+		font-size: 0.875rem;
+		font-family: $heading-font;
+		font-weight: 400;
+		margin-bottom: 1.125rem;
+		color: white;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.widget-content {
+			.social-icons {
+				padding: 0;
+				list-style: none;
+				margin-top: -0.5rem;
+	
+				li {
+					padding: 0 0.25rem;
+					&:last-child {
+						padding-right: 0;
+					}
+			
+					a {
+						color: $white;		
+						display: inline-block;
+						line-height: 1.8125rem;	
+						vertical-align: middle;
+						text-align: center;
+						border-radius: 0.5rem;	
+						
+						i {
+							vertical-align: top;
+							line-height: 1.8125rem;
+							font-size: 1rem;
+						}
+			
+						&:hover {
+							background-color: $theme-color;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+				line-height: 1;
+				margin-bottom: 1.2rem;
+				a {
+					color: #808080;
+					font-weight: 300;
+					text-decoration: none;
+					font-size: 0.875rem;
+					font-family: $heading-font;
+
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			.widget-content {
+				justify-content: space-between;
+			}
+
+			ul {
+				width: auto;
+				margin: auto;
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		p {
+			color: $white;
+			font-size: 1.125rem;
+			display: block;
+			font-family: $heading-font;
+		}
+
+		.payments {
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				width: 4rem;
+				height: 2rem;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0.5rem !important;
+
+				img {
+					width: 3rem !important;
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			a {	
+				font-family: $body-font;
+				font-size: 0.875rem;
+				font-weight: 300;
+				display: block;
+				text-decoration: none;
+				color: $white;
+				line-height: 1.5;
+				margin-bottom: 1rem;
+
+				i {
+					color: $theme-color;
+				}
+
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+	}
+
+	// Widget - feedback
+	&.widget-feedback {
+		.widget-content {
+			p {
+				letter-spacing: 0.1rem
+			}
+
+			#widget-feedback-form {
+				input {
+					background-color: #f9f9f9;
+					color:#d0d0d0;
+				}
+				
+				.input-group-append {
+					margin-left: -2.875rem;
+				}
+			}
+		}
+	}
+
+	&.widget-subscribe {
+		.widget-content {
+			p {
+				font-size:0.875rem;
+			}
+
+			#widget-subscribe-form {
+				input {
+					font-size: 0.875rem;
+				}
+
+				button {
+					font-family: $body-font;
+					font-size: 0.75rem;
+					padding: 1rem;
+					color: $white;
+				}
+
+				.input-group-append {
+					margin-left: 1rem;
+				}
+			}
+		}
+	}
+
+	// Widget - Products
+	&.widget-products {
+		.widget-content {
+			.product {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0.625rem;
+
+				.product-image {
+					flex: 1;
+					height: 8.25rem;
+					max-width: 9.75rem;
+				}
+
+				.product-details {
+					flex: 1;
+					padding: 0 1.25rem;					
+				}
+
+				.product-price {					
+					margin-bottom: 0.625rem;
+				}
+
+				.product-title {
+					a {
+						color: $white;																		
+					}					
+				}
+			}
+		}
+	}
+}

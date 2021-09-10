@@ -1,0 +1,32 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-logo {
+    font-family: $heading-font;
+    font-size: 9.375rem;
+    font-weight: 500;
+    color: $white;
+    line-height: 1;
+}
+
+.error-content {
+    h5 {
+        font-family: $heading-font;
+        font-size: 1.875rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    p {
+        color: #7c7c7c;
+    }
+
+    .go-home-link {
+        font-family: $body-font;
+        font-size: 0.75rem;
+        padding: 1rem 1.2rem;
+        color: $white;
+    }
+}

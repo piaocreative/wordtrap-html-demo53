@@ -1,0 +1,165 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.border-icon {
+	background-image: url(../images/icons/border-icon.png);
+	position: absolute;
+	width: 12rem;
+	height: 1rem;
+	top: 5rem;
+	background-repeat: no-repeat;
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.border-m, .border-lg {
+	position: absolute;
+    background-size: 100%;
+    height: 1rem;
+    top: 4.5rem;
+    background-repeat: no-repeat;
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+	}
+}
+
+.border-m {
+	background-image: url(../images/icons/border-m.png);
+    width: 20.5rem;
+}
+
+.border-lg {
+	background-image: url(../images/icons/border-lg.png);
+    width: 27rem;
+}
+
+.about-us-link {
+	font-family: $body-font;
+	font-size: .75rem;
+	font-weight: 400;
+	padding: 1rem 2.5rem;
+}
+
+#subscribe {
+	position: relative;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	h4 {
+		font-size: 2.125rem;
+	}
+
+	p {
+		color: #8fb9ff;
+	}
+
+	.decoration {
+		position: absolute;
+		text-align: end;
+		bottom: -3rem;
+
+		@include media-breakpoint-down(sm) {
+			bottom: -2rem;
+			
+			img {
+				width: 7rem;
+			}
+		}
+	}
+}
+
+.charater {
+	.charater-title {
+		font-family: $heading-font;
+		color: $theme-color;
+		font-size: 1.875rem;
+	}
+
+	.charater-list {
+		p {
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+		}
+
+		.charater-items {
+			p {
+				display: flex;
+				align-items: baseline;
+				gap: 0.5rem;
+				white-space: nowrap;
+
+				&::after {
+					position: relative;
+					display: inline-block;
+					content: "";
+					width: 100%;
+					height: 1px;
+					border-bottom: 1px dotted #a7a7a7;
+				}
+			}
+		}
+	}
+}
+
+.check-image {
+	position: relative;
+    top: -7rem;
+    left: -12rem;
+	margin-bottom: -7rem;
+
+	@include media-breakpoint-down(lg) {
+		top: 0;
+		left: 0;
+		margin: 0;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.check-details {
+	background-color: $theme-color;
+	padding: 3rem;
+    border-radius: 3rem;
+	position: relative;
+	top: -3rem;
+
+	.check-price {
+		font-family: $heading-font;
+		font-size: 2.815rem;
+		font-weight: 400;
+		color: $white;
+	}
+
+	p {
+		color: #a0cbe4;
+	}
+
+	a {
+		color: #a0cbe4;
+		text-decoration: none;
+		font-weight: 300;
+
+		&:hover {
+			color: $white;
+			text-decoration: underline;
+			font-weight: 400;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		top: 1rem;
+	}
+}

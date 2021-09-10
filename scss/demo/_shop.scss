@@ -1,0 +1,261 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+	margin: 1rem;
+
+	.product-image {
+		position: relative;
+		background-color: #dbe5f2;
+		height: 27rem;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		border-radius: 2rem;
+
+		img {
+			width: 14rem;
+    		height: 18rem;
+		}
+	}
+
+	.product-price {
+		line-height: 1.2;
+
+		h4 {
+			font-family: $heading-font;
+			font-weight: 600;
+			line-height: 1;
+			color: $dark;
+		}
+
+		del {
+			font-size: 0.875rem;
+			font-weight: 500;
+			color: #7d7d7d;
+			text-decoration: none;
+		}
+	}
+
+	.product-title {
+		position: absolute;
+		width: 100%;
+		top: 5rem;
+		font-family: $heading-font;
+		font-weight: 500;
+		color: $dark;
+	}
+
+	.product-rating {
+		font-family: $heading-font;
+		font-size: 1rem;
+		font-weight: 500;
+		color: #979797;
+		line-height: 1;
+
+		i {
+			color: #ffc107;
+
+			&.empty {
+				color: rgba(#ffc107, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.product-image {
+			background-color: $theme-color;
+			transition: 0.5s;
+		}
+	}
+
+	.add-to-cart {
+		padding: 0.9rem 1.5rem;
+		width: 100%;
+		font-family: $body-font;
+		font-size: 0.75rem;
+		color: #fff;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	.add-to-wishlist {
+		color: #888888;
+		display: flex;		
+		align-items: center;
+		justify-content: center;
+		font-size: 1rem;
+		line-height: 1;			
+		text-decoration: none;
+		padding: 0;
+
+		@include transition(all 0.3s ease-in-out);				
+
+		&:hover {
+			color: $dark;
+		}
+	}
+}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+	position: absolute;
+	top: 3rem;
+	width: 100%;
+	font-family: $body-font;
+    font-size: 1rem;
+    font-weight: 500;
+	text-align: center;
+}
+
+.onhot {
+	background-color: #ff3263;
+	color: $white;
+}
+
+.onnew {
+	color: #89bedd;
+}
+
+.onbest {
+	background-color: #8b5ec7;
+	color: $white;
+}
+
+.ontop {
+	background-color: #5adbde;
+	color: $white;
+}
+
+.onsale {
+	color: #6d7279;
+}
+
+.banner-wishlist {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fe3362;
+}
+
+
+/* Ads
+-----------------------------------------------------------------*/
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.875rem;
+
+	.ads-bg {
+		img {
+			border-radius: 3rem;
+		}
+	}
+
+	&.ads1, &.ads2, &.ads3 {
+		.ads-body {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 100%;
+		}
+	}
+
+	&.ads1 {
+		.ads-body {
+			padding: 4rem;
+
+			h3 {
+				font-weight: 400;
+				line-height: 1.35;
+			}
+		}
+	}
+
+	&.ads2 {
+		.ads-body {
+			h5 {
+				font-size: 1.25rem;
+				font-weight: 400;
+				line-height: 1.35;
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			&:nth-child(1) {
+				margin-top: 1.875rem;
+			}
+		}
+	}
+
+	&.ads3 {
+		.ads-body {
+			h3 {
+				font-weight: 400;
+				line-height: 1.35;
+			}
+
+			p {
+				color: #89bedd;
+				font-family: $heading-font;
+			}
+		}
+	}
+
+	&.ads4 {
+		position: relative;
+		background-color: #2612bb;
+		border-radius: 3rem;
+		padding: 4rem;
+
+		.ads-body {
+			h4 {
+				font-size: 1.875rem;
+				font-weight: 400;
+				line-height: 1.35;
+			}
+
+			p {
+				color: #786bd5;
+			}
+
+			.thumbnail {
+				position: absolute;
+				bottom: 0;
+				right: 4rem;
+
+				@include media-breakpoint-down(lg) {
+					position: relative;
+					right: 0;
+					bottom: -1rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+.post {
+	position: relative;
+	margin-bottom: 1.875rem;
+
+	&:hover {
+		.entry-title {
+			color: $theme-color;
+		}
+	}
+}
+
+.post-thumbnail {
+	img {
+		width: 100%;
+	}
+}
+
+.post-content {
+	.entry-title {
+		font-size: 1.25rem;
+		font-family: $heading-font;
+		font-weight: 500;
+		line-height: 1.35;
+	}
+
+	.entry-categories {
+		a {
+			font-family: $heading-font;
+			font-size: 0.75rem;
+			text-decoration:none;
+			color: #979797;
+			font-weight: 400;
+		}
+	}
+}

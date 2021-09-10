@@ -1,0 +1,40 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+#contact {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	input {
+		font-family: $body-font;
+		font-size:0.75rem;
+		border-color: #ebebeb;
+	}
+
+	::placeholder {
+		color: $dark;
+	}
+
+	button {
+		font-family: $body-font;
+		font-size: 0.75rem;
+		padding: 0.875rem;
+	}
+
+	p {
+		font-size: 0.875rem;
+		font-weight: 400;
+		color: #9f9f9f;
+	}
+}
+
+#contact-info {
+	padding: 3rem;
+	border-radius: 2rem;
+
+	p {
+		color: #8fc1df;
+	}
+}
