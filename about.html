@@ -134,13 +134,13 @@
 
                     <div class="container px-4">
                         
-                        <div id="page-title">
+                        <div id="page-top">
     
-                            <div class="sub-title d-flex align-items-center gap-2">
-                                <div class="m-0">Home</div>
-                                <i class="fas fa-angle-right"></i>
-                                <div class="text-primary">About Us</div>
-                            </div>
+                            <ul class="breadcrumb d-flex align-items-center gap-2">
+                                <li><a href="#">Home</a></li>
+                                <li><i class="fas fa-angle-right"></i></li>
+                                <li><a href="#" class="active">About Us</a></li>
+                            </ul>
     
                         </div>
 
@@ -158,13 +158,16 @@
 
                             <div class="row m-0">
 
-                                <div class="col-lg-5">
+                                <div class="col-lg-6 col-xxl-5">
+
                                     <h2 class="title text-dark">We Are A Digital Agency Focused On Production</h2>
+
                                 </div>
 
-                                <div class="col-lg-5 offset-xl-2">
+                                <div class="col-lg-5 offset-lg-1 offset-xxl-2">
+
                                     <p class="body-font lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p class="body-font lh-base">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+
                                 </div>
 
                             </div>
@@ -514,8 +517,8 @@
 
                                 <div class="ads ads1 mb-0">
                                     <div class="ads-bg">
-                                        <img src="./images/ads/ads1.png" class="img-full">
-                                    </div>
+                                        <div class="ads-bg-img" style="background-image: url(./images/ads/ads1.png);"></div>
+                                    </div>  
                                     <div class="ads-body text-center">
                                         <h3 class="heading-font text-white">New and modern processor designed specifically for demanding tasks</h3>
                                     </div>
@@ -527,10 +530,10 @@
     
                                 <div class="ads ads2">
                                     <div class="ads-bg">
-                                        <img src="./images/ads/ads2.png" class="img-fluid w-100">
-                                    </div>
+                                        <div class="ads-bg-img" style="background-image: url(./images/ads/ads2.png);"></div>
+                                    </div>   
                                     <div class="ads-body d-flex align-items-center">
-                                        <div class="col-md-5 offset-1">
+                                        <div class="col-md-6 col-lg-5 col-xl-6 offset-1">
                                             <h5 class="heading-font fw-semi-bold mb-2">We donate headphones upon purchase</h5>
                                             <p class="body-font fs-6 lh-base mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
                                         </div>
@@ -539,10 +542,10 @@
 
                                 <div class="ads ads2 mb-0">
                                     <div class="ads-bg">
-                                        <img src="./images/ads/ads3.png" class="img-fluid w-100">
-                                    </div>
+                                        <div class="ads-bg-img" style="background-image: url(./images/ads/ads3.png);"></div>
+                                    </div> 
                                     <div class="ads-body d-flex align-items-center">
-                                        <div class="col-md-5 offset-1">
+                                        <div class="col-md-6 col-lg-5 col-xl-6 col-xxl-5 offset-1">
                                             <h5 class="heading-font text-white mb-2">Make your shots more clearer</h5>
                                             <p class="body-font fs-6 text-white lh-base mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
                                         </div>
@@ -555,7 +558,7 @@
 
                     </div>
 
-                </div>
+                </div><!-- Ads -->
 
                 <div class="section">
 
@@ -652,7 +655,7 @@
 
                 </div><!-- Posts -->
 
-                 <!-- Logos
+                <!-- Logos
                 ============================================= -->
                 <div class="section pt-0">
 
@@ -662,6 +665,11 @@
 
                             <div class="col-12">
                                 <div class="logos">
+                                    <div class="logo-item d-flex"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item d-flex"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item d-flex"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item d-flex"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
+                                    <div class="logo-item d-flex"><img src="images/logos/logo3.png" alt="Logo Image" class="img-fluid"></div>
                                     <div class="logo-item d-flex"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
                                     <div class="logo-item d-flex"><img src="images/logos/logo2.png" alt="Logo Image" class="img-fluid"></div>
                                     <div class="logo-item d-flex"><img src="images/logos/logo1.png" alt="Logo Image" class="img-fluid"></div>
@@ -692,14 +700,14 @@
 
                     <div class="row m-0">
 
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 text-center text-xl-start">
                             <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
                                 <img src="images/footer-logo.png" alt="Saler Logo">
                             </a>
 
                             <div class="widget widget-social">
                                 <div class="widget-content">
-                                    <ul class="social-icons d-flex align-items-center gap-3 mt-3">
+                                    <ul class="social-icons d-flex align-items-center gap-3 mt-3 justify-content-center justify-content-xl-start">
                                         <li><a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#" target="_blank" title="instragram"><i class="fab fa-instagram"></i></a></li>
@@ -709,9 +717,9 @@
 
                         </div>
 
-                        <div class="col-6 col-lg-3">
+                        <div class="col-md-6 col-lg-3">
 
-                            <div class="widget widget-custom-html">
+                            <div class="widget widget-custom-html text-center text-lg-start">
                                 <p class="widget-title">Saler Company</p>
                                 <div class="widget-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </p>
@@ -720,9 +728,9 @@
 
                         </div>
                         
-                        <div class="col-6 col-lg-2 offset-xl-1">
+                        <div class="col-md-6 col-lg-2 offset-xl-1">
 
-                            <div class="widget widget-custom-html">
+                            <div class="widget widget-custom-html text-center text-lg-start">
                                 <p class="widget-title">Contact Us</p>
                                 <div class="widget-content">
                                     <a href="#">
@@ -742,9 +750,9 @@
 
                         </div>
 
-                        <div class="col-6 col-lg-4">
+                        <div class="col-lg-6 col-xl-4">
 
-                            <div class="widget widget-subscribe">
+                            <div class="widget widget-subscribe text-center text-lg-start">
                                 <p class="widget-title">Subscribe To Our News</p>
                                 <div class="widget-content">
                                     <form id="widget-subscribe-form" action="#" method="post">
@@ -766,13 +774,13 @@
                 
                 <!-- Footer bottom
                 ============================================= -->
-                <div id="footer-bottom" class="d-flex justify-content-between mx-3">
+                <div id="footer-bottom" class="d-md-flex text-center justify-content-md-between mx-3">
 
                     <p class="mb-0">Copyright &copy; 2020 InteriorSaler</p>
 
                     <div class="widget widget-payment mb-lg-0">
                         <div class="widget-content">
-                            <div class="payments d-flex">
+                            <div class="payments d-flex justify-content-center justify-content-lg-start">
                                 <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa"></span>
                                 <span class="payment-icon"><img src="images/payments/mastercard.png" alt="Mastercard"></span>
                                 <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal"></span>

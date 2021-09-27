@@ -38,3 +38,11 @@
 		color: #8fc1df;
 	}
 }
+
+.map {
+	position: absolute;
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+	}
+}

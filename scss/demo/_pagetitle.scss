@@ -24,17 +24,6 @@
 		text-transform: uppercase;
 	}
 
-	.sub-title {
-		font-weight: 500;
-		font-size: 0.875rem;
-		color: #969696;
-		font-family: $heading-font;
-
-		i {
-			font-size: 0.8rem;
-		}
-	}
-
 	p {
 		font-size: 1rem;
 		line-height: 1.5;
@@ -50,19 +39,22 @@
 }
 
 .breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
+	i {
+		font-size: 0.8rem;
+		color: $theme-color;
+	}
 
 	li {
-		padding: 0 0.625rem;
+		a {
+			font-family: $heading-font;
+			font-size: 0.875rem;
+			font-weight: 500;
+			text-decoration: none;
+			color: #969696;
 
-		&.active {
-			color: #ddcef5;
-		}
-
-		&:first-child {
-			padding-left: 0;
+			&.active {
+				color: $theme-color;
+			}
 		}
 	}
 }
