@@ -8,32 +8,22 @@
 /* ----------------------------------------------------------------
 	Form Styles
 -----------------------------------------------------------------*/
+#contact {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 
-// Textarea
-textarea {
-    resize: none;
+	p {
+		font-size: 0.875rem;
+		color: #9f9f9f;
+	}
 }
 
-// Form label
-.form-label {
-    font-size: 0.875rem;
-    color: #7c7b7a;
+#contact-info {
+	padding: 3rem;
+	border-radius: 2rem;
+
+	p {
+		color: #8fc1df;
+	}
 }
 
-// Required field
-.required-field {
-    position: relative;
-
-    &:after {
-        content: "";
-        position: absolute;
-        right: 1.375rem;
-        top: 0;
-        display: block;
-        width: 0.5rem;
-        height: 0.6875rem;
-        background-image: url(../images/icons/clip_icon.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-}

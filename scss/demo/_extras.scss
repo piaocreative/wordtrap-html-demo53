@@ -47,7 +47,6 @@
 .about-us-link {
 	font-family: $body-font;
 	font-size: .75rem;
-	font-weight: 400;
 	padding: 1rem 2.5rem;
 }
 
@@ -139,7 +138,6 @@
 	.check-price {
 		font-family: $heading-font;
 		font-size: 2.815rem;
-		font-weight: 400;
 		color: $white;
 	}
 
@@ -161,5 +159,13 @@
 
 	@include media-breakpoint-down(lg) {
 		top: 1rem;
+	}
+}
+
+.map {
+	position: absolute;
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
 	}
 }

@@ -35,12 +35,11 @@ $heading-font:                'Poppins', sans-serif;
 
 // Font sizes
 $h1-font-size:                	6.25rem;
-$h1-about: 						          5.375rem;
 $h2-font-size:                	3.75rem;
 $h3-font-size:                	2.5rem;
 $h4-font-size:                	1.5rem;
 $h5-font-size:                	1.125rem;
-$h6-font-size:               	  0.875rem;
+$h6-font-size:               	0.875rem;
 
 
 $grid-gutter-width:             2rem;
@@ -96,7 +95,7 @@ $section-spacer:				3rem;
 
 // Forms
 $input-color:                   #8f8f8f;
-$input-border-color:            #333333;
+$input-border-color:            #ebebeb;
 $input-border-width:			      1px;
 $input-btn-focus-color-opacity: 1;
 
@@ -124,7 +123,7 @@ $input-border-radius-lg:        1.83rem;
 
 $input-font-weight:				      300;
 $input-focus-box-shadow:		    0 0 0 1px #e5e8e8;
-$input-placeholder-color:       #fff;
+$input-placeholder-color:       #000;
 
 // Addon//
 $input-group-addon-padding-y:           $input-btn-padding-y;
@@ -134,8 +133,8 @@ $input-group-addon-padding-x:           1.5rem;
 // Buttons
 $btn-font-family:               $body-font;
 
-$btn-padding-y:                 1rem;
-$btn-padding-x:                 1.8rem;
+$btn-padding-y:                 0.875rem;
+$btn-padding-x:                 0.875rem;
 $btn-font-size:                 0.75rem;
 
 $btn-padding-y-sm:              0.5rem;
