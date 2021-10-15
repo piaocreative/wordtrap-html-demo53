@@ -27,3 +27,13 @@
 	}
 }
 
+#subscrbe {
+	padding: 5rem 0;
+}
+
+#subscribe-form {
+	::placeholder {
+		color: $white;
+	}
+}
+

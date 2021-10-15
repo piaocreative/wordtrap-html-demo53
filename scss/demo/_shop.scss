@@ -20,6 +20,7 @@
 .product {
 	position: relative;
 	padding: 1rem;
+	margin-bottom: 1.875rem;
 
 	.product-image {
 		position: relative;
@@ -195,7 +196,7 @@
 
 	&.ads1 {
 		.ads-body {
-			padding: 4rem 4rem 11.5rem;
+			padding: 3.5rem 4rem 11.5rem;
 
 			h3 {
 				font-weight: 400;

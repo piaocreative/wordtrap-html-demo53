@@ -169,15 +169,12 @@
 					font-size: 0.875rem;
 				}
 
-				button {
-					font-family: $body-font;
-					font-size: 0.75rem;
-					padding: 1rem;
-					color: $white;
-				}
-
 				.input-group-append {
 					margin-left: 1rem;
+				}
+
+				::placeholder {
+					color: $white;
 				}
 			}
 		}
